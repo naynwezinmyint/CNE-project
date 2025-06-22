@@ -3,7 +3,7 @@ terraform {
     organization = "cnfp4"
 
     workspaces {
-      name = "productpage-ws"
+      name = "CNE-project"
     }
   }
 }
