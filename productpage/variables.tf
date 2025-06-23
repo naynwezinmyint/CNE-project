@@ -27,22 +27,5 @@ variable "port" {
   description = "Port the application exposes and Prometheus scrapes"
   type        = number
 }
-variable "k8s_host" {
-  type = string
-}
 
-variable "k8s_client_certificate" {
-  type = string
-  sensitive = true
-}
-
-variable "k8s_client_key" {
-  type = string
-  sensitive = true
-}
-
-variable "k8s_cluster_ca_cert" {
-  type = string
-  sensitive = true
-}
 
