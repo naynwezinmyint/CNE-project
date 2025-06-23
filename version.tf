@@ -9,12 +9,11 @@ terraform {
 
 provider "kubernetes" {
   host                   = var.k8s_host
+  token                  = var.k8s_token
   cluster_ca_certificate = base64decode(var.k8s_ca_cert)
-  client_certificate     = base64decode(var.k8s_client_cert)
-  client_key             = base64decode(var.k8s_client_key)
 }
 
 variable "k8s_host" {}
+variable "k8s_token" {}
 variable "k8s_ca_cert" {}
-variable "k8s_client_cert" {}
-variable "k8s_client_key" {}
+
