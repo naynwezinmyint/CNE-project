@@ -1,9 +1,9 @@
-terraform {
-  backend "remote" {
-    organization = "cnfp4"
+#terraform {
+  #backend "remote" {
+    #organization = "cnfp4"
 
-    workspaces {
-      name = "CNE-project"
-    }
-  }
-}
+    #workspaces {
+      #name = "CNE-project"
+    #}
+  #}
+#}
